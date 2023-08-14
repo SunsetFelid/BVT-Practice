@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Sandbox</title>
+</head>
+
+<style>
+    body{
+        background-color: rgb(25, 19, 48);
+    }
+    img{
+        position: absolute;
+        margin-top: 0px;
+        margin-left: 10%;
+        width: 75%;
+        align-content: center;
+        justify-content: center;
+        z-index: -5;
+    }
+.parent{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+ z-index: 1;
+}
+/*child elements*/
+.child-one, .child-two, .child-three, .child-four, .child-five, .child-six, .child-seven, .child-eight{
+  font-size: 100px;
+    margin-top: 550px;
+  text-align: center;
+  border: 5px solid rgb(185, 57, 123);
+  border-radius: 50px;
+}
+.child-one:hover, .child-two:hover, .child-three:hover, .child-four:hover, .child-five:hover, .child-six:hover, .child-seven:hover, .child-eight:hover{
+  cursor: pointer;
+  transform: scale(1.5);
+}
+.child-one{
+  background-color: red;
+  order: 3;
+  flex-grow: 1;
+  color: indigo;
+}
+.child-two{
+  background-color: orange;
+  order: 2;
+  flex-grow: 1;
+  color: rgb(28, 28, 111);
+}
+.child-three{
+  background-color: yellow;
+  order: 1;
+  flex-grow: 1;
+  color: rgb(18, 21, 77);
+}
+.child-four{
+  background-color: rgb(128, 0, 117);
+  order: 4;
+  flex-grow: 1;
+  color: rgb(98, 25, 146);
+}
+.child-five{
+  background-color: rgb(98, 25, 146);
+  flex-grow: 1;
+  order: 6;
+  color: rgb(128, 0, 117);
+}
+.child-six{
+  background-color: indigo;
+  order: 6;
+  flex-grow: 1;
+  color: red;
+}
+.child-seven{
+  background-color: rgb(28, 28, 111);
+  order: 7;
+  flex-grow: 1;
+  color: orange;
+}
+.child-eight{
+  background-color: rgb(18, 21, 77);
+  order: 8;
+  flex-grow: 1;
+  color: yellow;
+}
+
+</style>
+<body>
+    <img src="https://cdn2.miau.pub/media_attachments/files/110/890/251/447/620/324/original/7ebefdac8a6e77d4.png" alt="A digimon">
+  <div class="parent">
+      <button class="child-one">
+        G
+      </button>
+      <button class="child-two">
+        I
+      </button>
+      <button class="child-three">
+        D
+      </button>
+      <button class="child-four">
+        I
+      </button>
+      <button class="child-five">
+        M
+      </button>
+      <button class="child-six">
+        O
+      </button>
+      <button class="child-seven">
+        N
+      </button>
+      <button class="child-eight">
+        !
+      </button>
+  </div>
+</body>
+</html>
