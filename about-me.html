@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Sandbox</title>
+</head>
+<style>
+    body{
+        background-color: rgb(25, 19, 48);
+    }
+.parent{
+    display: flex;
+    height: 2.5rem;
+line-height: 2.5rem;
+padding: 0 1.25rem;
+  padding-left: 1.25rem;
+  margin-top: 20px;
+  width: stretch;
+    justify-items: center;
+    flex-direction: row;
+    background-color: rgb(218, 48, 121);
+    border: solid rgb(103, 30, 132);
+  }
+  /*child elements*/
+  .child-one, .child-two, .child-three, .child-four {
+
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: rgb(255, 211, 154);
+    border-radius: 10%;
+
+  }
+  .child-one:hover, .child-two:hover, .child-three:hover, .child-four:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+  }
+  .child-one{
+    order: 2;
+    flex-grow: 1;
+  }
+  .child-two{
+    order: 1;
+    flex-grow: 1;
+  }
+  .child-three{
+    order: 4;
+    flex-grow: 1;
+  }
+  .child-four{
+    order: 3;
+    flex-grow: 1;
+  }
+  #selfie{
+    justify-self: center;
+    align-self: center;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 140px;
+  }
+  .about-me{
+    background-color: rgb(177, 39, 60);
+    padding: 2px 5px;
+    border-radius: 20px;
+    position: absolute;
+    width: 600px;
+    margin-top: 100px;
+    margin-left: 620px;
+    color: rgb(255, 211, 154);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  h4{
+    color: rgb(255, 248, 50);
+    margin-left: 100px;
+  }
+  #list1{
+        margin-top: 255px;
+  }
+  #prices{
+    margin-top: 455px;
+  }
+  #footer{
+    margin-top: 800px;
+    color: rgb(255, 211, 154);
+
+  }
+  </style>
+<body>
+  <div class="parent">
+      <div class="child-one">
+        Home
+      </div>
+      <div class="child-two">
+        Portfolio
+      </div>
+      <div class="child-three">
+        Store
+      </div>
+      <div class="child-four">
+        Contact
+      </div>
+  </div>
+  <div id="selfie">
+    <img src="https://sunsetfelid.carrd.co/assets/images/image01.png?v=ff10e6cb" alt="self-portrait of SunsetFelid">
+  </div>
+  <div class="about-me">
+    <h4>About me:</h4>
+    <p>
+        I'm Sunset! I've been a freelance illustrator for 6 years. I mostly do character art and character design, but I also draw backgrounds and design advertisements. I use
+        Clip Studio Paint EX, Canva, & am learning HTML & CSS.
+    </p>
+  </div>
+  <div class="about-me" id="list1">
+    <h4>I draw:</h4>
+    <ul>
+        <li>Furries</li>
+        <li>Fantasy Characters</li>
+        <li>Mecha</li>
+        <li>Modern Characters</li>
+        <li>PNGtubers & Live2D models</li>
+    </ul>
+  </div>
+  <div class="about-me" id="prices">
+    <h4>My Prices:</h4>
+    <p>Flat rates based on scale<br>
+        Icon (2048x2048 or 4096x4096): $50<br>
+        A4 paper (can be a character art, or a single-page comic), limit 3: $110<br>
+        Double-page (size of 2 A4 papers), limit 1: $200<br>
+        Reference Sheet, limit 1: $280</p>
+  </div>
+  <div id="footer">
+    <p style="text-align: center;">
+        This page is a work in progress. Images & Artwork were made by Samhain Dempsey & either belong to the artist or a client of the artist.<br>
+        The buttons do not work yet.
+    </p>
+</div>
+</body>
+</html>
